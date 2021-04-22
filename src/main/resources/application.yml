@@ -1,0 +1,16 @@
+server:
+  port: 8081
+person:
+  id: 1
+  name: 小邹
+  hobby:
+    学习,
+    听歌,
+    玩游戏
+  family: brother
+  pet:
+    name: 丢丢
+    type: cat
+  map:
+    k1: v1
+    k2: v2
