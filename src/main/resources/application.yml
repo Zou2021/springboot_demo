@@ -14,3 +14,12 @@ person:
   map:
     k1: v1
     k2: v2
+
+# 随机值设置以及参数间引用配置
+tom:
+  age: ${random.int[10,20]}
+  description: tom的年龄可能是：${tom.age}
+
+simplebean:
+  id: 1
+  name: 自定义starter

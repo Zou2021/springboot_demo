@@ -1,12 +1,14 @@
 package com.zou.springboot_demo;
 
 import com.zou.controller.ControllerDemo;
+import com.zou.entity.SimpleBean;
 import com.zou.pojo.MyProperties;
 import com.zou.pojo.Person;
 import com.zou.pojo.Student;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -72,4 +74,24 @@ class SpringbootDemoApplicationTests {
         System.out.println(applicationContext.containsBean("myService"));
     }
 
+    /**
+     * 随机 测试
+     */
+    @Value("${tom.description}")
+    private String description;
+    @Test
+    public void placeholderTest(){
+        System.out.println(description);
+    }
+
+    /**
+     * 自定义starter 测试
+     */
+    @Autowired
+    private SimpleBean simpleBean;
+
+    @Test
+    public void simpleBeanTest(){
+        System.out.println(simpleBean);
+    }
 }
