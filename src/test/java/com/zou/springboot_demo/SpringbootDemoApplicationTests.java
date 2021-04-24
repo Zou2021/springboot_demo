@@ -1,12 +1,15 @@
 package com.zou.springboot_demo;
 
 import com.zou.controller.ControllerDemo;
+import com.zou.domain.Address;
+import com.zou.domain.PersonTwo;
 import com.zou.entity.SimpleBean;
 import com.zou.pojo.Comment;
 import com.zou.pojo.MyProperties;
 import com.zou.pojo.Person;
 import com.zou.pojo.Student;
 import com.zou.repository.CommentRepository;
+import com.zou.repository.PersonRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -110,5 +113,31 @@ class SpringbootDemoApplicationTests {
         Optional<Comment> optional = commentRepository.findById(1);
         optional.ifPresent(System.out::println);
         System.out.println();
+    }
+
+    /**
+     * redis 测试
+     */
+    @Autowired
+    private PersonRepository personRepository;
+
+    @Test
+    public void redisTest(){
+        PersonTwo personTwo = new PersonTwo();
+        personTwo.setFirstName("小");
+        personTwo.setLastName("邹");
+
+        Address address = new Address();
+        address.setCity("衡阳");
+        address.setCountry("中国");
+        personTwo.setAddress(address);
+        //向redis数据库添加数据
+        PersonTwo save = personRepository.save(personTwo);
+
+        //输出数据
+//        List<PersonTwo> list = personRepository.findAddress_City("衡阳");
+//            for(personTwo personTwo : list){
+//                System.out.println(personTwo);
+//            }
     }
 }

@@ -30,7 +30,7 @@
       <option name="IGNORE_JAVADOC_PERIOD" value="true" />
       <option name="IGNORE_DUPLICATED_THROWS" value="false" />
       <option name="IGNORE_POINT_TO_ITSELF" value="false" />
-      <option name="myAdditionalJavadocTags" value="date,author:,date:,RunWith(SpringRunner.class),SpringBootTest,Component,ConfigurationProperties(prefix,SpringBootApplication(scanBasePackages=&quot;controller&quot;),SpringBootApplication(scanBasePackages,Value注释测试,Configuration,PropertySource(&quot;classpath:test.properties&quot;),EnableConfigurationProperties(MyProperties.class),Configuration：自定义配置类,PropertySource(&quot;classpath:test.properties&quot;)：指定自定义配置文件的位置和名称,EnableConfigurationProperties(MyProperties.class)：开启对应配置类的属性注入功能,Configuration：定义该类是一个配置类,Bean：将返回值对象作为组件添加到spring容器中，该组件id默认为方法名,Entity(name" />
+      <option name="myAdditionalJavadocTags" value="date,author:,date:,RunWith(SpringRunner.class),SpringBootTest,Component,ConfigurationProperties(prefix,SpringBootApplication(scanBasePackages=&quot;controller&quot;),SpringBootApplication(scanBasePackages,Value注释测试,Configuration,PropertySource(&quot;classpath:test.properties&quot;),EnableConfigurationProperties(MyProperties.class),Configuration：自定义配置类,PropertySource(&quot;classpath:test.properties&quot;)：指定自定义配置文件的位置和名称,EnableConfigurationProperties(MyProperties.class)：开启对应配置类的属性注入功能,Configuration：定义该类是一个配置类,Bean：将返回值对象作为组件添加到spring容器中，该组件id默认为方法名,Entity(name,RedisHash(&quot;persons&quot;):指定操作实体类对象在Redis数据库中的存储空间" />
     </inspection_tool>
   </profile>
 </component>
