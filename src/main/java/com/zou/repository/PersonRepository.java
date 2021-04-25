@@ -10,5 +10,5 @@ import java.util.List;
  * @date: 2021/4/23 17:52
  */
 public interface PersonRepository extends CrudRepository<PersonTwo, String> {
-    List<PersonTwo> findAddress_City(String 衡阳);
+    List<PersonTwo> findAddressCity(String m);
 }
